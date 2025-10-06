@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Center content but let card take more width */
+#algn {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* move slightly upward */
+    padding-top: 40px;
+}
+
+/* Bigger card, wider coverage */
+#card {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Cover-style upper section */
+#upper-bg {
+    width: 100%;
+    height: 300px;
+    background-color: #FFE400;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile image larger and positioned overlapping */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border: 5px solid #FFE400;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+/* Lower section now fills the rest */
+#lower-bg {
+    padding-top: 120px; /* space for image overlap */
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* Text styling */
+.text .name  {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.text .username  {
+    font-size: 16px;
+    color: gray;
+}
+
+.tagline{
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+.description{
+    font-size: 14px;
+    color: rgb(3, 3, 3);
+}
+
+/* Icons row */
+#icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+#icons img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* Buttons section */
+#btn {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.msg {
+    padding: 12px 25px;
+    background-color: #e60000;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.msg:hover {
+    background-color: #ff0000;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Stats section */
+
+
+/* Footer license */
+
+.upload-image {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-image form {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(230, 0, 35, 0.15);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.upload-image input[type="text"] {
+  border: 2px solid #e2e2e2;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 180px;
+  transition: all 0.3s ease;
+}
+
+.upload-image input[type="file"] {
+  border: none;
+  font-size: 14px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.upload-image input[type="text"]:focus {
+  border-color: #00e1ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(230, 0, 35, 0.2);
+}
+
+.upload-image button {
+  background: #00e1ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-image button:hover {
+  background: #00e1ff;
+  transform: scale(1.05);
+}
+

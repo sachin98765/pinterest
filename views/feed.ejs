@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed</title>
+  <link rel="stylesheet" href="/stylesheets/feed.css">
+</head>
+<body>
+
+  <div class="container">
+    <% if (posts && posts.length > 0) { %>
+      <% posts.forEach(post => { %>
+        <div class="box">
+          <a href="/images/uploads/<%= post.image %>" target="_blank">
+            <img src="/images/uploads/<%= post.image %>" alt="image">
+          </a>
+          <!-- <div class="caption"><%= post.postText %></div>
+          <div class="username">by <%= post.user.username %></div> -->
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No posts yet. Upload something!</p>
+    <% } %>
+  </div>
+
+</body>
+</html>
